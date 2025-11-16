@@ -191,6 +191,7 @@ img {
     margin-right: -380px;
     scale: 1.17;
     margin-left: 70px;
+    z-index: 1;
 }
 
 .hero-title {
@@ -261,6 +262,7 @@ img {
     transform: translateX(20%);
     scale: 1.6;
     transition: var(--transition-slow);
+
 }
 
 .hero-image .badge:hover{
@@ -846,14 +848,29 @@ textarea {
   transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
+/* Toast variants */
+.notification-popup.success {
+  background-color: var(--primary-color-2); /* existing blue/primary */
+}
+
+.notification-popup.error {
+  background-color: #b91c1c; /* red error state */
+}
+
+.notification-popup.error .notification-content .icon {
+  color: #fee2e2;
+}
+
+.notification-popup.success .notification-content .icon {
+  color: rgb(13, 138, 40); /* your green */
+}
+
+
 .notification-popup.show {
   bottom: 30px;
   opacity: 1;
 }
 
-.notification-content .icon{
-    color:rgb(13, 138, 40);
-}
 .notification-content i {
   margin-right: 10px;
   font-size: 1.2rem;
