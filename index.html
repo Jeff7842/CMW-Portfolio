@@ -574,7 +574,7 @@
                             </div>
                             <div>
                                 <h4 class="contact-method-title">Email</h4>
-                                <p>contact@cmwakanyi.com</p>
+                                <p>cmwakanyi@gamil.com</p>
                             </div>
                         </div>
                         
@@ -617,26 +617,27 @@
                 
                 <div class="contact-form">
                     <h3 class="contact-form-title">Send a Message</h3>
-                    <form class="space-y-4" action="send_email.php" method="POST" onsubmit="submitForm(event)">
+                    <form class="space-y-4" action="https://api.web3forms.com/submit" method="POST" onsubmit="submitForm(event)">
+                          <input type="hidden" name="access_key" value="cbd50027-d670-496e-8a34-b38a58f13bd1">
                         <div class="form-grid">
                             <div class="form-group">
-                                <label for="name">Name</label>
-                                <input type="text" id="name" placeholder="Your name" required>
+                                <label for="name" name="Name">Name</label>
+                                <input type="text" id="name" placeholder="Joe Doe" required>
                             </div>
                             <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" placeholder="Your email" required>
+                                <label for="email" name="Email">Email</label>
+                                <input type="email" id="email" placeholder="joedoe@example.com" required>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" placeholder="Subject" required>
+                            <label for="subject" name="Subject">Subject</label>
+                            <input type="text" id="subject" placeholder="Energy and...." required>
                         </div>
                         <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" placeholder="Your message" required></textarea>
+                            <label for="message" name="Message">Message</label>
+                            <textarea id="message" placeholder="I would like to to know if..." required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-white" onclick="sendMessage(event)">
+                        <button type="submit" class="btn btn-white" onclick="sendMessage(event)" name="submit">
                             Send Message
                         </button>
              </form>
